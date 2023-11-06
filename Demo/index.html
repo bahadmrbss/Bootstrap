@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--  -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">İkigai</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <!-- ms-auto kodu ekleyerek yazıları navigasyonun sağ tarafına çektim. -->
+                    <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+                    <a class="nav-link" href="#">Hakkımızda</a>
+                    <a class="nav-link" href="#">Ürünler</a>
+                    <a class="nav-link" href="#">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/237/1600/600" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/88/1600/600" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/56/1600/600" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- container - start -->
+    <div class="container mt-5">
+        <div class="row"> <!-- row - start -->
+            <div class="col-sm-6"> <!-- abuot us - start -->
+                <img class="img-fluid img-thumbnail" src="https://picsum.photos/id/75/600/400" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h2>Hakkımızda</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, optio.</p>
+                <p>Iusto consequuntur deleniti natus ratione tempora consequatur a ipsam ab!</p>
+                <p>Eligendi inventore ipsam, cumque maxime voluptate quasi illo esse laboriosam!</p>
+                <p>Quasi vitae officiis voluptatem, esse tenetur delectus beatae sed excepturi!</p>
+            </div> <!-- abuot us - end -->
+        </div> <!-- row - end -->
+
+        <!-- products - start -->
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/id/76/400/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ürün 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">İncele</a>
+                    </div>
+                </div>
+            </div> <!-- product 1 - end -->
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/id/77/400/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ürün 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">İncele</a>
+                    </div>
+                </div>
+            </div> <!-- product 1 - end -->
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/id/83/400/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ürün 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">İncele</a>
+                    </div>
+                </div>
+            </div> <!-- product 1 - end -->
+        </div>
+        <!-- products - end -->
+<!-- pictures - start -->
+<div class="row mt-5">
+    <div class="col-sm-12">
+        <h4>Resimler</h4>
+    </div>
+    <div class="col-sm"><img src="https://picsum.photos/id/84/400/300" alt="" class="w-100 img-thumbnail"></div>
+    <div class="col-sm"><img src="https://picsum.photos/id/85/400/300" alt="" class="w-100 img-thumbnail"></div>
+    <div class="col-sm"><img src="https://picsum.photos/id/92/400/300" alt="" class="w-100 img-thumbnail"></div>
+    <div class="col-sm"><img src="https://picsum.photos/id/87/400/300" alt="" class="w-100 img-thumbnail"></div>
+    <div class="col-sm"><img src="https://picsum.photos/id/88/400/300" alt="" class="w-100 img-thumbnail"></div>
+</div>
+<!-- pictures - end -->
+
+    </div> <!-- container - end -->
+
+
+    <!-- footer - start -->
+    <div class="bg-dark text-light">
+    <footer class="container py-5 mt-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <h5>Baha Demirbaş</h5>
+            <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- footer - end -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
